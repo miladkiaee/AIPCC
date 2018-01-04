@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AIPCC.iml" filepath="$PROJECT_DIR$/.idea/AIPCC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sync_coin_database.iml" filepath="$PROJECT_DIR$/.idea/sync_coin_database.iml" />
     </modules>
   </component>
 </project>
