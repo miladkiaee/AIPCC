@@ -33,10 +33,10 @@ for coin in coins:
 #    print(coin_info.dtypes)
     coin_info.replace({'-': '0'}, regex=True)
     # convert the date string to the correct date format
-    #coin_info = coin_info.assign(Date=pd.to_datetime(coin_info['Date']))
+    coin_info = coin_info.assign(Date=pd.to_datetime(coin_info['Date']))
 #    print(time_date);
 #    print(time_date.dtype)
-    coin_info.Date = pd.DatetimeIndex(coin_info.Date).astype(np.int64);
+    #coin_info.Date = pd.DatetimeIndex(coin_info.Date).astype(np.int64);
 
     print(coin_info.dtypes)
 
@@ -44,7 +44,7 @@ for coin in coins:
 #    coin_info['Volume'] = coin_info['Volume'].str.replace("-", "0")
     #coin_info['Volume'] = coin_info['Volume'].astype('int64')
 
-#    coin_info.to_csv(coin+"_history.csv");
+    coin_info.to_csv(coin+"_history.csv");
 
     ###################################################3
     coin_ts = coin_info[['Date', 'Close']]
